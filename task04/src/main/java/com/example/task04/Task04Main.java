@@ -12,7 +12,7 @@ public class Task04Main {
             case 3, 4, 5 -> "весна";
             case 6, 7, 8 -> "лето";
             case 9, 10, 11 -> "осень";
-            default -> throw new IllegalArgumentException(
+            default -> throw new MyException(
                     String.format("monthNumber %d is invalid, month number should be between 1..12", monthNumber)
             );
         };
